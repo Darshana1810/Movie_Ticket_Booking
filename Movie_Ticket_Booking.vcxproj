@@ -153,10 +153,6 @@
   <ItemGroup>
     <ClCompile Include="Movie_Ticket_Booking.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="date_n_time.h" />
-    <ClInclude Include="language.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
