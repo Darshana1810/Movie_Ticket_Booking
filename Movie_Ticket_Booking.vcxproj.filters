@@ -18,5 +18,19 @@
     <ClCompile Include="Movie_Ticket_Booking.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="date_time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="movieuser_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="movieuser_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="time_date.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
