@@ -8,21 +8,48 @@
 
 using namespace std;
 
-int main() {
-	movie_info mlist;
-	user_info ulist;
-	mlist.input();
-	mlist.output();
-	ulist.input(mlist);
-	ulist.display();
-}
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+class dat {
+	movie_info mlist[5];
+	user_info ulist[5];
+	int movie_count, user_count,selected[5];
+public:
+	void Options();
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+	//friend bool compare_city_name(char a[], movie_info b[]);
+
+	dat() :movie_count(0), user_count(0), selected{ -1 } {}
+};
+
+void dat::Options() {
+	int opt;
+	cout << endl << "1.Add movie";
+	cout << endl << "2.Display movies";
+	cout << endl << "3.Book Ticket";
+	cout << endl << "4.View booked tickets";
+	cout << endl << "5.Exit";
+	cin >> opt;
+	switch (opt) {
+	case 1:
+		mlist[movie_count++].input();
+		break;
+	case 2:
+		for (int i = 0; i < movie_count; i++)
+			mlist[i].display();
+		break;
+	case 3:
+		ulist[user_count++].input(mlist);
+		break;
+	case 4:
+		for (int i = 0; i < user_count; i++)
+			ulist[i].display();
+		break;
+	case 5:
+		exit(0);
+	}
+}
+
+int main(){
+	dat d;
+	while(true)
+	d.Options();
+}
