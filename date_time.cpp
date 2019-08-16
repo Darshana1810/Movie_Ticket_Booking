@@ -19,10 +19,12 @@ void time::gettime() {
 	}
 }
 
+//display time
 void time::showtime(){
 	cout << hh << ":" << mm;
 }
 
+//checks if time a and b are equal
 bool check_time(time a,time b){
 	if (a.hh == b.hh && a.mm == b.mm) {
 		return true;
