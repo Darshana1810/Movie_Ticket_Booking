@@ -151,13 +151,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="movieuser_info.cpp" />
+    <ClCompile Include="data.cpp" />
+    <ClCompile Include="movie_info.cpp" />
     <ClCompile Include="Movie_Ticket_Booking.cpp" />
-    <ClCompile Include="date_time.cpp" />
+    <ClCompile Include="time.cpp" />
+    <ClCompile Include="user_info.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="movieuser_info.h" />
-    <ClInclude Include="time_date.h" />
+    <ClInclude Include="data.h" />
+    <ClInclude Include="movie_info.h" />
+    <ClInclude Include="seat.h" />
+    <ClInclude Include="time.h" />
+    <ClInclude Include="user_info.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

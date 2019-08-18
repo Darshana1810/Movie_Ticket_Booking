@@ -18,18 +18,33 @@
     <ClCompile Include="Movie_Ticket_Booking.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="date_time.cpp">
+    <ClCompile Include="time.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="movieuser_info.cpp">
+    <ClCompile Include="movie_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="user_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="movieuser_info.h">
+    <ClInclude Include="time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="time_date.h">
+    <ClInclude Include="movie_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="user_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="seat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

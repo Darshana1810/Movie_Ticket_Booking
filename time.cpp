@@ -1,5 +1,5 @@
-#include "time_date.h"
 #include <iostream>
+#include "time.h"
 
 using namespace std;
 
@@ -20,12 +20,12 @@ void time::gettime() {
 }
 
 //display time
-void time::showtime(){
-	cout << hh << ":" << mm;
+void time::showtime() {
+	cout << hh << ":" << mm << endl;
 }
 
 //checks if time a and b are equal
-bool check_time(time a,time b){
+bool check_time(time a, time b) {
 	if (a.hh == b.hh && a.mm == b.mm) {
 		return true;
 	}
