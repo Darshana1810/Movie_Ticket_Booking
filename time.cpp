@@ -21,7 +21,12 @@ void time::gettime() {
 
 //display time
 void time::showtime() {
-	cout << hh << ":" << mm << endl;
+	cout.width(2);
+	cout.fill('0');
+	cout << hh << ":";
+	cout.width(2);
+	cout.fill('0');
+	cout << mm;
 }
 
 //checks if time a and b are equal

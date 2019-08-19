@@ -30,6 +30,9 @@
     <ClCompile Include="data.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="date.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="time.h">
@@ -45,6 +48,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="seat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="date.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

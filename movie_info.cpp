@@ -19,6 +19,11 @@ void movie_info::input() {
 		cout <<i+1<<")";
 		movie_time[i].gettime();
 	}
+	cout << "Enter movie date:" << endl;
+	cout << "Start : ";
+	start.input();
+	cout << "End : ";
+	end.input();
 }
 
 void movie_info::display() {
@@ -27,17 +32,32 @@ void movie_info::display() {
 	cout << "Movie name : " << movie_name << endl;
 	cout << "Ticket Price : " << cost << endl;
 	cout << "Number of shows : " << no_of_shows << endl;
-	cout << "Timings : " << endl;
+	cout << "Timings : ";
 	for (int i = 0; i < no_of_shows; i++) {
-		cout << i + 1 << ") ";
+		cout << endl << i + 1 << ") ";
 		movie_time[i].showtime();
 	}
+
+	cout << endl << "Movie date:" << endl;
+	cout << "Start : ";
+	start.display();
+	cout << endl << "End : ";
+	end.display();
+	cout << endl;
 }
 
 void movie_info::display_time() {
 	for (int i = 0; i < no_of_shows; i++) {
+		cout << endl << i + 1 << ") ";
 		movie_time[i].showtime();
 	}
+}
+
+void movie_info::display_date() {
+	cout << "Start : ";
+	start.display();
+	cout << endl << "End : ";
+	end.display();
 }
 
 //compare functions
@@ -76,6 +96,18 @@ bool compare_movie_time(time& a, movie_info b[],int& cost) {
 				return true;
 			}
 		}
+	}
+	return false;
+}
+
+bool compare_movie_date(date& a, movie_info b[]) {
+	int sc = scount;
+	for (int i = 0; i < sc; i++) {
+		if (selected[i] == -1)
+			continue;
+		int k = selected[i];
+		if (a.is_date(b[k].start, b[k].end))
+			return true;
 	}
 	return false;
 }

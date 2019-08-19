@@ -6,6 +6,8 @@
 
 int main(){
 	dat d;
-	while(true)
-	d.Options();
+	while (true) {
+		d.Options();
+		cout << "------------------------------------------" << endl;
+	}
 }
